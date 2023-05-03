@@ -2,24 +2,17 @@ package ru.netology.manager;
 
 import ru.netology.NotRegisteredException;
 import ru.netology.Player;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 
 public class Game {
-    List<Player> players = new ArrayList<>();
+    HashMap<String, Player> players = new HashMap<>();
 
-    public void register(Player player) {
-        players.add(player);
+    public void register(String playerName, Player player) {
+        players.put(playerName, player);
     }
 
-    public Player findByPlayerName(String name) {
-        for (Player player : players) {
-            if (player.getPlayerName().equals(name)) {
-                return player;
-            }
-        }
-        return null;
+    public Player findByPlayerName(String key) {
+        return players.get(key);
     }
 
     public int round(String playerName1, String playerName2) {
