@@ -5,7 +5,7 @@ public class Player {
     private String playerName;
     private int strength;
 
-    public Player(int id, String playerName, int strength,) {
+    public Player(int id, String playerName, int strength) {
         this.id = id;
         this.playerName = playerName;
         this.strength = strength;
