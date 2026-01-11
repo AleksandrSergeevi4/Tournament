@@ -4,13 +4,11 @@ public class Player {
     private int id;
     private String playerName;
     private int strength;
-    private int age;
 
-    public Player(int id, String playerName, int strength, int age) {
+    public Player(int id, String playerName, int strength) {
         this.id = id;
         this.playerName = playerName;
         this.strength = strength;
-        this.age = age;
     }
 
     public int getId() {
