@@ -9,6 +9,7 @@ public class Player {
         this.id = id;
         this.playerName = playerName;
         this.strength = strength;
+        this.age = age;
     }
 
     public int getId() {
