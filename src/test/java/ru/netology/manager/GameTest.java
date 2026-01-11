@@ -14,9 +14,9 @@ public class GameTest {
 
     @BeforeEach
     public void add() {
-        tournament.register(player1);
-        tournament.register(player2);
-        tournament.register(player3);
+        tournament.register("player1", player1);
+        tournament.register("player2", player2);
+        tournament.register("player3", player3);
     }
 
     @Test
@@ -56,7 +56,7 @@ public class GameTest {
     @Test
     public void shouldMsgForNotRegisteredSecondPlayer() {
         Assertions.assertThrows(NotRegisteredException.class, () ->
-                tournament.round("player1", "player5")
+                tournament.round("player1", "player6")
         );
     }
 }
