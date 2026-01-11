@@ -4,8 +4,9 @@ public class Player {
     private int id;
     private String playerName;
     private int strength;
+    private int age;
 
-    public Player(int id, String playerName, int strength) {
+    public Player(int id, String playerName, int strength, int age) {
         this.id = id;
         this.playerName = playerName;
         this.strength = strength;
